@@ -1,0 +1,17 @@
+def fibWorker(xTake2: Int, xTake1: Int, x: Int, n: Int): Int {
+  if (x == n) {
+    xTake2 + xTake1
+  } else {
+    fibWorker(xTake1, xTake2 + xTake1, x + 1, n)
+  }
+}
+
+def fib(n: Int): Int {
+  if (n == 0 || n == 1) {
+    n
+  } else {
+    fibWorker(0, 1, 2, n)
+  }
+}
+
+fib(33)

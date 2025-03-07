@@ -1,0 +1,9 @@
+def inputAndConcat(n: Int): String {
+  if (n == 0) {
+    ""
+  } else {
+    concat(getInput(), inputAndConcat(n - 1))
+  }
+}
+
+inputAndConcat((getInput() : Int))

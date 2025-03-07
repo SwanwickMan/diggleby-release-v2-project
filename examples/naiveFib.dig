@@ -1,0 +1,9 @@
+def fib(x: Int): Int {
+  if (x == 0 || x == 1) {
+    x
+  } else {
+    fib(x - 2) + fib(x - 1)
+  }
+}
+
+fib(33)

@@ -1,0 +1,10 @@
+def fac(x: Int): Int {
+  if (x == 0) {
+    1
+  } else {
+    let minusone = x - 1 in
+    x * fac(minusone)
+  }
+}
+
+fac(10)

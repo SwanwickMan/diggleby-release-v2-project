@@ -1,0 +1,17 @@
+def isEven(x: Int): Bool {
+  if (x == 0) {
+    true
+  } else {
+    isOdd(x - 1)
+  }
+}
+
+def isOdd(x: Int): Bool {
+  if (x == 0) {
+    false
+  } else {
+    isEven(x - 1)
+  }
+}
+
+isEven(11)
