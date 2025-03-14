@@ -1,0 +1,2 @@
+All exercises attempted
+Code compiles on OpenJDK 21.0.4"
